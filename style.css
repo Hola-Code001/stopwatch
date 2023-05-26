@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  color: #fff;
+  min-height: 100%;
+  padding: 5rem;
+  background-color: #1f2633;
+}
+
+.stopwatch {
+  display: grid;
+  place-content: center;
+  background-color: #131723;
+  max-width: 450px;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  gap: 3rem;
+}
+
+.time {
+  display: grid;
+  place-items: center;
+  background-color: #1f2633;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.time p {
+  font-size: 0.9rem;
+}
+
+.time-display {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.time p:last-child {
+  color: #5fead1;
+  transition: 0.5s;
+  font-size: 0.8rem;
+  font-weight: 600;
+  position: relative;
+  bottom: -70px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.btns button {
+  all: unset;
+  padding: 0.45rem 1rem;
+  border: solid 1px #fbfbfb;
+  font-size: 0.8rem;
+  border-radius: 0.35rem;
+  transition: 0.4s;
+}
+
+.btns button:hover {
+  border: solid 1px #5fead1;
+  background-color: #5fead1;
+  color: #000;
+}
+
+.active {
+  border: solid 1px #5fead1 !important;
+  background-color: #5fead1 !important;
+  color: #000 !important;
+}
