@@ -74,7 +74,6 @@ body {
   all: unset;
   padding: 0.45rem 1rem;
   border: solid 1px #fbfbfb;
-  font-size: 0.8rem;
   border-radius: 0.35rem;
   transition: 0.4s;
 }
